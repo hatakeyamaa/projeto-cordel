@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --cor01: black;
+    --fontetitulo: 'Passion One', arial, sans-serif;
+    --fonte02: Verdana, 'Geneva', Tahoma, sans-serif;
+    --fonte03: 'Sriracha', Arial, sans-serif;
+}
+
+header{
+    background-color: var(--cor01);
+    color: white;
+}
+
+header h1{
+    font-family: var(--fontetitulo);
+    font-variant: small-caps;
+    font-size: 10vw;
+    text-align: center;
+    padding-top: 50px;
+}
+
+header p{
+    font-family: var(--fonte02);
+    font-size: 16px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+header a, footer a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+header a:hover, footer a:hover{
+    text-decoration: underline;
+}
+
+
+section{    
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+    font-family: var(--fonte03);
+    font-size: 3.5vw;
+}
+
+section > p{
+    padding-bottom: 2em;
+}
+
+section#imagem1{
+    /* 
+    background-image: url('../imagens/background001.jpg');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+    */
+
+    background: url('../imagens/background001.jpg') no-repeat right center / cover fixed;
+}
+
+section#imagem2{
+    /*
+    background-image: url('../imagens/background002.jpg');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+    */
+
+    background: url('../imagens/background002.jpg') no-repeat right center / cover fixed;
+}
+
+p.texto{
+    color: white;
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.459);
+    text-shadow: 1px 1px 3px black;
+}
+
+footer{
+    background-color: var(--cor01);
+    padding: 10px;
+    font-family: var(--fonte02);
+    font-size: 16px;
+    color: white;
+    text-align: center;
+}
